@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>HealthBuddy</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area ">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/HBlogo1-removebg-preview.png') }}" alt="">
+          </a>
+          <div class="" id="">
+            <div class="User_option">
+              <form class="form-inline my-2  mb-3 mb-lg-0">
+                <input type="search" placeholder="Search">
+                <button class="btn   my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+<!-- contact section -->
+
+<section class="contact_section layout_padding-top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 offset-md-1">
+        <div class="form_container">
+          <div class="heading_container">
+            <h2>
+              Ai Diet 
+            </h2>
+            <p>
+              Please,fill the all details for your diet plan
+            </p>
+          </div>
+          <form action="/generate_diet_plan" method="post">
+              <label for="age">Age:</label>
+              <input type="number" name="age" required><br>
+      
+              <label for="gender">Gender:</label>
+              <select name="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+              </select><br>
+      
+              <label for="weight">Weight (in kg):</label>
+              <input type="number" name="weight" required><br>
+      
+              <label for="height">Height (in cm):</label>
+              <input type="number" name="height" required><br>
+      
+              <label for="activity_level">Activity Level:</label>
+              <select name="activity_level" required>
+                  <option value="sedentary">Sedentary</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="active">Active</option>
+              </select><br>
+      
+              <label for="goal">Goal:</label>
+              <select name="goal" required>
+                  <option value="weight_loss">Weight Loss</option>
+                  <option value="muscle_gain">Muscle Gain</option>
+                  <option value="maintenance">Maintenance</option>
+              </select><br>
+              <div class="d-flex ">
+                  <button type="submit" value="generate_diet_plan" method="post">
+                      Generate
+                  </button>
+                </div>
+          </form>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end contact section -->
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }} "></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+</body>
+
+</html>

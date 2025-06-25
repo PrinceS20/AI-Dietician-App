@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>HealthBuddy</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area ">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/HBlogo1-removebg-preview.png') }}" alt="">
+          </a>
+          <div class="" id="">
+            <div class="User_option">
+              <form class="form-inline my-2  mb-3 mb-lg-0">
+                <input type="search" placeholder="Search">
+                <button class="btn   my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/login">Log in</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section">
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-5 offset-md-1">
+                  <div class="detail-box">
+                    <div class="number">
+                    </div>
+                    <h1>
+                      HealthBuddy<br>
+                      <span>
+                      Ai Dietician
+                      </span>
+                    </h1>
+                    <p>
+                      Provide you a Healthy Diet.<br>
+                      Eat well...Feel well
+                    </p>
+                    <div class="btn-box">
+                      <a href="/gd" class="btn-2">
+                        Generate Diet
+                      </a>
+                  
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-circle">
+                    <img src="{{ url_for('static', filename='images/AIBotIntro-unscreen.gif') }}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="detail-box">
+        <div class="heading_container">
+          <img src="{{ url_for('static', filename='images/HBlogo1.jpg') }}" alt="">
+          <h2>
+            About Us
+          </h2>
+        </div>
+        <p>
+          Welcome to our Ai-Dietician Website, where personalized nutrition plans are just a click away. Our animated characters will be your cheerful companions on the journey to your dream body shape. Powered by advanced AI, our virtual dietician replicates the expertise of a real-life professional. By collecting your essential details like schedule, body type, height, and weight, we create custom diet plans with precise nutrient values. You have the freedom to provide feedback and make adjustments to suit your preferences. With our delightful platform, we combine cutting-edge technology and personalized guidance to help you achieve lasting health and well-being. Start your transformation today!        </p>
+        <div class="btn-box">
+          <a href="">
+            <span>
+              <a href="about.html">
+              Read More
+              </a>
+            </span>
+            <img src="{{ url_for('static', filename='images/link-arrow.png') }}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- ani section -->
+
+  <section class="animal_section layout_padding">
+    <div class="container">
+      <div class="animal_container">
+        <div class="box b1">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/Aibot1.jpeg') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              
+            </h5>
+            <p>
+              Hello.I'm HealthBuddy....🫡
+            </p>
+          </div>
+        </div>
+        <div class="box b2">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/Aibot2.jpeg') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              
+            </h5>
+            <p>
+            Please fill up all details about your diet.  
+            </p>
+          </div>
+        </div>
+        <div class="box b1">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/Aibot3.jpeg') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              
+            </h5>
+            <p>
+              Generating a proper Diet plan for you. 
+            </p>
+          </div>
+        </div>
+        <div class="box b2">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/Aibot4.png') }}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              
+            </h5>
+            <p>
+              I hope this Diet plan helpful for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end ani section -->
+
+  <!-- Absract section -->
+
+  <section class="pet_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/AIBotus-unscreen.gif') }}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <img src="{{ url_for('static', filename='images/HBlogo1-removebg-preview.png') }}" alt="">
+              <h2>
+                Abstract:
+              </h2>
+            </div>
+            <p>
+              Welcome to our Ai-Dietician Website, where cutting-edge technology meets personalized guidance for optimal nutrition and body transformation. Our animated bot, powered by artificial intelligence, serves as a virtual diet consultant, offering comprehensive knowledge about human diets.
+
+              Similar to real dieticians, our AI-dietician is well-versed in the nutrient values of foods and provides tailored consultations. Just like a human dietician, it takes into account crucial factors such as schedule, body type, height, and weight. By gathering this information from users, our system processes it diligently, ensuring a holistic approach to diet planning.
+              
+              To further understand the user's lifestyle, the system also asks for details like working hours, age, and more. This data is carefully stored and analyzed, enabling our AI-dietician to calculate the precise nutrient values required to meet the user's specific needs.
+              
+              Once the calculations are complete, our system presents the user with an appropriate diet plan. It then seeks the user's feedback, ensuring satisfaction. If necessary, alternative diets are readily available to fulfill the user's nutritional requirements.
+              
+              Discover the joy of a tailored and interactive dieting experience with our website. Let our animated bot guide and motivate you on your journey to achieving your desired body shape. With a perfect blend of advanced technology and personalized care, we empower you to embrace nourishment, well-being, and lasting health. Say hello to a new and vibrant you!
+            </p>
+            <div class="btn-box">
+              <a href="">
+                <span>
+                  Read More
+                </span>
+                <img src="{{ url_for('static', filename='images/link-arrow.png') }}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end absract section -->
+
+ 
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <img src="{{ url_for('static', filename='images/HBlogo1-removebg-preview.png') }}" alt="">
+        <h2>
+          What Says Our Customer
+        </h2>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+        </p>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/DevCuteBoy.jpg') }}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Dev Doda
+                </h4>
+                <p>
+                  This Website was very helpful for me.It provides me a perfect weight loss Diet.Now i can fullfill my dream of becoming an Actor. 
+                </p>
+                <img src="{{ url_for('static', filename='images/quote.png') }}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/SameerCuteBoy.jpg') }}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Mr.Sameer Mali
+                </h4>
+                <p>
+                 With the help of this Website's Diet,I can travel all over the world.I am able to maintain my body by this Diet.Thank you for guiding a proper Diet.
+                </p>
+                <img src="{{ url_for('static', filename='images/quote.png') }}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename='images/HarshCuteBoy.jpg') }}" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Harsh Vyas
+                </h4>
+                <p>
+                  I recently read the rewiews about this Website.And I decide to start following this diet plan.Then i also fullfill my dream of becoming an actor...just like my Hero-Dev Doda.
+                </p>
+                <img src="{{ url_for('static', filename='images/quote.png') }}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+\
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h5>
+              CONTACT INFO
+            </h5>
+            <div>
+              <img src="{{ url_for('static', filename='images/call.png') }}" alt="" />
+              <p>
+                +01 1234567890
+              </p>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/mail.png') }}" alt="" />
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h5>
+              social media
+            </h5>
+            <div class="social_container">
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/fb.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/twitter.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+  
+      <a href="https://html.design/"></a>
+    </p>
+  </section>
+  <!-- end  footer section -->
+
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+</body>
+
+</html>

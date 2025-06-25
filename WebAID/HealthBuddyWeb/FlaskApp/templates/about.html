@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>HealthBuddy</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area ">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/HBlogo1-removebg-preview.png') }}" alt="">
+          </a>
+          <div class="" id="">
+            <div class="User_option">
+              <form class="form-inline my-2  mb-3 mb-lg-0">
+                <input type="search" placeholder="Search">
+                <button class="btn   my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="detail-box">
+        <div class="heading_container">
+          <h2>
+            About Us
+          </h2>
+        </div>
+        <p>
+          Welcome to our Ai-Dietician Website, where cutting-edge technology meets personalized guidance for optimal nutrition and body transformation. Our animated bot, powered by artificial intelligence, serves as a virtual diet consultant, offering comprehensive knowledge about human diets.
+
+Similar to real dieticians, our AI-dietician is well-versed in the nutrient values of foods and provides tailored consultations. Just like a human dietician, it takes into account crucial factors such as schedule, body type, height, and weight. By gathering this information from users, our system processes it diligently, ensuring a holistic approach to diet planning.
+
+To further understand the user's lifestyle, the system also asks for details like working hours, age, and more. This data is carefully stored and analyzed, enabling our AI-dietician to calculate the precise nutrient values required to meet the user's specific needs.
+
+Once the calculations are complete, our system presents the user with an appropriate diet plan. It then seeks the user's feedback, ensuring satisfaction. If necessary, alternative diets are readily available to fulfill the user's nutritional requirements.
+
+Discover the joy of a tailored and interactive dieting experience with our website. Let our animated bot guide and motivate you on your journey to achieving your desired body shape. With a perfect blend of advanced technology and personalized care, we empower you to embrace nourishment, well-being, and lasting health. Say hello to a new and vibrant you!
+Introducing our Ai-Dietician Website, where proper diet plans for achieving the desired body shape are just a click away. Our platform offers personalized interactions with animated characters, creating a delightful and engaging experience for our users.
+
+Designed to replicate the expertise of a human dietician, our online artificial dietician utilizes advanced artificial intelligence. With knowledge of nutrient values and a comprehensive understanding of dietary needs, our system acts as a trusted diet consultant.
+
+To provide tailored recommendations, our system collects essential user data, including their daily schedule, body type, height, and weight. This information is processed meticulously to calculate precise nutrient values that align with the user's requirements.
+
+Presenting the recommended diet plan, our system allows users to provide feedback and make modifications based on their preferences. If the initial plan doesn't suit their liking, alternative diets are readily available to fulfill their nutritional needs.
+
+Our goal is to create an enjoyable and supportive environment throughout the dieting journey. Animated characters add a charming touch to our platform, acting as friendly companions and offering ongoing motivation and inspiration.
+
+Join us today and experience the harmonious blend of cutting-edge technology and personalized guidance. Let our animated characters become your trusted partners on the path to achieving your desired body shape. Together, we will unlock a world of nourishment, well-being, and lasting health.        
+</p>
+        <div class="btn-box">
+          <a href="">
+            <span>
+              Our PPt
+            </span>
+            <img src="{{ url_for('static', filename='images/link-arrow.png') }}" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+  
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h5>
+              CONTACT INFO
+            </h5>
+            <div>
+              <img src="{{ url_for('static', filename='images/call.png') }}" alt="" />
+              <p>
+                +01 1234567890
+              </p>
+            </div>
+            <div>
+              <img src="{{ url_for('static', filename='images/mail.png') }}" alt="" />
+              <p>
+                priyanshu800483@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h5>
+              social media
+            </h5>
+            <div class="social_container">
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/fb.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/twitter.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="{{ url_for('static', filename='images/instagram.png') }}" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  
+
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+</body>
+
+</html>
