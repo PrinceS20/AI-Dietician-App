@@ -4,6 +4,10 @@ Python | Machine Learning | Flask | HTML/CSS | Web Deployment
 
 During my 5th semester, I designed and developed an AI-based Dietician Web App aimed at promoting healthier eating habits through personalized dietary recommendations. The goal was to simulate the role of a virtual dietician by analyzing user data and suggesting suitable meal plans.
 
+
+https://github.com/user-attachments/assets/b0fd48f8-6bb9-4a93-b26a-5b3c37b3e2f7
+
+
 ✨ Key Features:
 
 User-friendly interface to collect input such as age, gender, height, weight, activity level, dietary goal (weight loss/gain/maintenance), and food preferences (veg/non-veg/vegan).
